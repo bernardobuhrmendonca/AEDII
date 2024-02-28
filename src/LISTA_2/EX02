@@ -1,0 +1,7 @@
+    Quando trabalhamos o conceito de herança é nos dito sobre clsses que derivam de outras menos detalhadas, onde as
+subclasses herdam os atributos e métodos da super classe, chamada também, informalmente de classe "pai". Além disso
+existe também a possibilidade de subscrever métodos da classe super, ou seja mudar caracteristicas de determinado método
+da classe herdada. Trabalhando esses conceitos conseguimos destacar a reutilização de códigos, onde boa parte da
+estrutura de classes herdeiras não precisa ser feita novamente, ao passo que possuímos uma classe de caractéristicas
+mais gerais que pode servir de base para diversas outras e caso alguma característica pontual necessite de ser alterada,
+através dos métodos, pode-se subscrever esse método, adaptando este as necessidades de desenvolvimento.
