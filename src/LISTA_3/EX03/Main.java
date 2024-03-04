@@ -19,14 +19,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         long numero;
-        long f = 0;
         System.out.println("Indique o número do qual será gerado o fatorial.");
         numero = teclado.nextLong();
         try {
-            f = Fatorial(numero);
+            long f = Fatorial(numero);
+            System.out.println(f);
         } catch(EntradaInvalidaException e) {
             System.err.println("Número indicado muito alto. Tente novamente com um número menor.");
         }
-        System.out.println(f);
+
     }
 }
