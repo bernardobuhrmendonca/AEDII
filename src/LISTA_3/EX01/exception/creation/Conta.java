@@ -79,14 +79,16 @@ public class Conta {
         setSaldo((valor < 0) ? 0 : getSaldo() + valor);
     }
     public void saca(double valor) throws SaldoInsuficienteException{
-        if (getSaldo() > valor) {
+        if (getSaldo() >= valor) {
             setSaldo(getSaldo() - valor);
         }
-        else if (valor >= (getSaldo() + getLimite())){
-            setSaldo(0);
+        else if (valor <= (getSaldo() + getLimite())){
+            double antigo = this.saldo;
             setLimite(valor - getSaldo());
+            setSaldo(0);
             throw new SaldoInsuficienteException("O saque ultrapassou o valor do saldo e você entrou no limite em: "
-                    + (valor - getSaldo()));
+                    + (valor - antigo));
+
         }
         else {
             throw new SaldoInsuficienteException ("Seu saldo, somado ao seu limite, é: " + (getSaldo() + getLimite())

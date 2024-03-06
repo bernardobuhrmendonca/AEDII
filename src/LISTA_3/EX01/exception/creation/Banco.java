@@ -19,7 +19,7 @@ public class Banco {
             c.saca(saque);
         } catch (SaldoInsuficienteException ex) {
             JOptionPane.showMessageDialog(null,
-                    ex.getMessage() + "\nOperação não realizada!");
+                    ex.getMessage());
 
         }
         JOptionPane.showMessageDialog(null, c.toString());
