@@ -50,11 +50,11 @@ public class Triangulo {
         return classificacao_lados;
     }
     public int determinarTipo() {
-        if (getLado1() == getLado2() & getLado2() == getLado3()) {
+        if (getLado1() == getLado2() && getLado2() == getLado3()) {
             setClassificacao_lados("Equilátero");
             return 0;
         }
-        else if (getLado1() == getLado2() | getLado1() == getLado3() | getLado2() == getLado3()){
+        else if (getLado1() == getLado2() || getLado1() == getLado3() || getLado2() == getLado3()){
             setClassificacao_lados("Isóceles");
             return 1;
         } else {
