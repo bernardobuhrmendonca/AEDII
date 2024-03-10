@@ -2,7 +2,7 @@ package EX_REV.EX01;
 
 import java.util.Scanner;
 
-public class ex01 {
+public class Ex01 {
     public static void ex1() {
         Scanner teclado = new Scanner(System.in);
         int m, n;

@@ -2,7 +2,7 @@ package EX_REV.EX04;
 
 import java.util.Scanner;
 
-public class ex04 {
+public class Ex04 {
     public static void ex4() {
         int l, c;
 

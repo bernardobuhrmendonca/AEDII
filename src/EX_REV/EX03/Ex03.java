@@ -2,7 +2,7 @@ package EX_REV.EX03;
 
 import java.util.Scanner;
 
-public class ex03 {
+public class Ex03 {
     public static void ex3() {
         double soma = 0;
         int n;

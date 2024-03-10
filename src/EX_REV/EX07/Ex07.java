@@ -3,12 +3,12 @@ package EX_REV.EX07;
 import java.io.*;
 import java.util.Scanner;
 
-public class ex07 {
+public class Ex07 {
     private File diretorio;
     private File arquivo;
     private final Scanner teclado = new Scanner(System.in);
 
-    public ex07() {}
+    public Ex07() {}
 
     public void criarDir() {
         //Nomear diretório:

@@ -27,6 +27,5 @@ public class Main {
         } catch(EntradaInvalidaException e) {
             System.err.println("Número indicado muito alto. Tente novamente com um número menor.");
         }
-
     }
 }

@@ -7,9 +7,9 @@ public class Triangulo {
     private String classificacao_lados;
 
     public Triangulo(double lado1, double lado2, double lado3) throws TrianguloInvalidoError {
-        if (lado1 <=0 | lado2 <= 0 | lado3 <= 0 |
-                lado1 + lado2 < lado3 | lado1 + lado3 < lado2 | lado2 + lado3 < lado1 |
-                Math.abs(lado1 - lado2) > lado3 | Math.abs(lado1 - lado3) > lado2 | Math.abs(lado2 - lado3) > lado1 ) {
+        if (lado1 <=0 || lado2 <= 0 || lado3 <= 0 ||
+                lado1 + lado2 < lado3 || lado1 + lado3 < lado2 || lado2 + lado3 < lado1 ||
+                Math.abs(lado1 - lado2) > lado3 || Math.abs(lado1 - lado3) > lado2 || Math.abs(lado2 - lado3) > lado1 ) {
             throw new TrianguloInvalidoError();
         } else {
             setLado1(lado1);
