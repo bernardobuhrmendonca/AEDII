@@ -18,7 +18,7 @@ public class RemoverNomeBinario {
             } else if (nome.compareToIgnoreCase(nomes.get(meio)) > 0) {
                 esquerda = meio + 1;
             } else {
-                direita = meio -1;
+                direita = meio - 1;
             }
         }
         return achou;
