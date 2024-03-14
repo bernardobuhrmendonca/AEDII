@@ -11,7 +11,7 @@ public class RemoverNomeBinario {
         int meio;
         Collections.sort(nomes);
         while (esquerda <= direita && !achou) {
-            meio = direita - esquerda / 2;
+            meio = direita + esquerda / 2;
             if (nome.equalsIgnoreCase(nomes.get(meio))) {
                 nomes.remove(meio);
                 achou = true;

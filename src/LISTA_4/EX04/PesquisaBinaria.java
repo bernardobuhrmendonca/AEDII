@@ -11,7 +11,7 @@ public class PesquisaBinaria {
         int meio;
         boolean achou = false;
         while (direita >= esquerda) {
-            meio = direita - esquerda / 2;
+            meio = direita + esquerda / 2;
             if (nome.equalsIgnoreCase(nomes.get(meio))) {
                 esquerda = nomes.size();
                 achou = true;
